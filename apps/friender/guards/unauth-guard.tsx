@@ -9,7 +9,7 @@ export const UnAuthGuard = ({ children }: UnAuthGuardProps) => {
 
   if (status === 'loading') return <></>;
 
-  if (status === 'authenticated') redirect('/');
+  if (status === 'authenticated') redirect('/dashboard');
 
   return children;
 };
